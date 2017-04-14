@@ -131,9 +131,16 @@ $(function() {
 		$('.header').addClass('is-dropped');
 		$('body').addClass('is-locked');
 	});
+	$('.search-open').on('click', function() {
+		$('.header').addClass('is-search');
+		$('body').addClass('is-locked');
+	});
 	$('.menu-close').on('click', function() {
-		$('.header').removeClass('is-dropped');
+		$('.header').removeClass('is-dropped is-search');
 		$('body').removeClass('is-locked');
+	});
+	$('.nav__search--submit').on('click', function(e) {
+		e.preventDefault();
 	});
 });
 (function headerSearch() {
