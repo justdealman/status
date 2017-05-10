@@ -103,6 +103,15 @@ $(function() {
 			});
 		}
 	}
+	function setMinContentHeight() {
+		var minHeight = $(window).height()-($('.header').outerHeight()+$('.footer-nav').outerHeight()+parseInt($('.footer-nav').css('margin-top'))+$('.footer').outerHeight());
+		if ( minHeight < 0 ) {
+			minHeight = 0;
+		}
+		$('.content').css({
+			'min-height': minHeight
+		});
+	}
 	$(window).on('resize scroll', function() {
 		if ( !isMobile ) {
 			stickyNav();
@@ -120,6 +129,7 @@ $(function() {
 				$(this).val($(this).attr('data-full-text'));
 			}
 		});
+		setMinContentHeight();
 	});
 	$(window).trigger('resize');
 	$('.footer-nav--group h5').on('click', function() {
