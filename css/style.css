@@ -2976,7 +2976,7 @@ button::-moz-focus-inner {
 		display:none !important;
 	}
 	.wrapper {
-		padding-top:70px;
+		padding-top:60px;
 	}
 	.header {
 		position:absolute;
@@ -3223,18 +3223,18 @@ button::-moz-focus-inner {
 		display:none;
 	}
 	.header__row {
-		height:70px;
+		height:60px;
 	}
 	.header__logo {
 		left:50%;
-		top:8px;
-		width:208px;
-		margin-left:-108px;
+		top:-4px;
+		-webkit-transform:translateX(-50%);
+		transform:translateX(-50%);
 	}
-	.header__logo a {
-		height:55px;
-		background:url('../img/logo-mobile.png') no-repeat 0 0;
-		background-size:208px 55px;
+	.header__logo img {
+		width:auto;
+		height:60px;
+		vertical-align:top;
 	}
 	.header__logo p,
 	.header__logo h3 {
