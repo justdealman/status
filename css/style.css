@@ -506,7 +506,10 @@ button::-moz-focus-inner {
 .nav__item:hover .nav__item--link {
 	color:#7d7777;
 }
-.nav__main .active a {
+.nav__item--current {
+	color:#ca2929;
+}
+.nav__item:hover .nav__item--current {
 	color:#ca2929;
 }
 .nav__item.has-sub {
