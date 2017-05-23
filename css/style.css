@@ -565,22 +565,21 @@ button::-moz-focus-inner {
 	right:0;
 	top:0;
 	z-index:1;
-	width:50px;
+	width:500px;
 	height:55px;
 }
 .nav__search--text {
-	visibility:hidden;
+	visibility:visible;
 	position:absolute;
 	right:0;
 	top:0;
-	width:0;
-	color:transparent;
+	width:100%;
+	color:#000000;
 	font-size:16px;
 	font-weight:normal;
 	font-family:'Roboto', sans-serif;
-	padding:17px 0;
+	padding:17px 50px 17px 20px;
 	background:#ffffff;
-	opacity:0;
 	-webkit-box-sizing:border-box;
 	box-sizing:border-box;
 	-webkit-transition:all 0.5s ease-in-out;
@@ -591,20 +590,10 @@ button::-moz-focus-inner {
 	box-shadow:0 0 5px rgba(0,0,0,0.1);
 }
 .nav__search--text::-webkit-input-placeholder  {
-	color:transparent;
+	color:rgba(0,0,0,0.5);
 	text-transform:uppercase;
 	-webkit-transition:all 0.5s ease-in-out;
 	transition:all 0.5s ease-in-out;
-}
-.nav__search--text.is-visible {
-	color:#000000;
-	visibility:visible;
-	opacity:1;
-	padding-left:20px;
-	padding-right:50px;
-}
-.nav__search--text.is-visible::-webkit-input-placeholder  {
-	color:rgba(0,0,0,0.5);
 }
 .nav__search--submit {
 	position:absolute;
@@ -2833,6 +2822,9 @@ button::-moz-focus-inner {
 	margin:58px auto 46px;
 }
 @media all and (max-width:1300px) and (min-width:961px) {
+	.nav__search {
+		width:calc(100% - 705px);
+	}
 	.header__nav {
 		left:241px;
 		right:auto;
