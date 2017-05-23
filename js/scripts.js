@@ -165,7 +165,7 @@ $(function() {
 			scrollTop: 0
 		}, 1000);
 	});
-});
+});/*
 (function headerSearch() {
 	var isFocused = false;
 	var hideDelay;
@@ -200,4 +200,4 @@ $(function() {
 		hideInput();
 		isFocused = false;
 	});
-})();
+})();*/

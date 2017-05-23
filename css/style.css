@@ -1882,11 +1882,15 @@ button::-moz-focus-inner {
 	background-position:-58px 0;
 }
 .article__info--slider .item {
-	width:454px;
 	height:330px;
 	opacity:0.7;
 	-webkit-transition:all 0.3s ease-in-out;
 	transition:all 0.3s ease-in-out;
+}
+.article__info--slider .item img {
+	width:auto;
+	height:330px;
+	vertical-align:top;
 }
 .article__info--slider .slick-current {
 	opacity:1;
