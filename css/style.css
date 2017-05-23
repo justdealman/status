@@ -977,17 +977,32 @@ button::-moz-focus-inner {
 	box-sizing:border-box;
 }
 .item-cols--text ul {
-	width:calc(100% + 13px);
+	width:calc(100% + 15px);
 	margin:0 0 10px;
 }
 .item-cols--text ul li {
+	position:relative;
 	display:inline-block;
 	color:#e92626;
 	font-size:11px;
 	line-height:14px;
 	font-family:'Roboto', sans-serif;
 	text-transform:uppercase;
-	margin:0 10px 0 0;
+	padding:0 15px 0 0;
+	margin:0 -3px 0 0;
+}
+.item-cols--text ul li:after {
+	content:'|';
+	position:absolute;
+	right:0;
+	top:0;
+	width:15px;
+	font-size:9px;
+	color:#5f5f5f;
+	text-align:center;
+}
+.item-cols--text ul li:last-child:after {
+	display:none;
 }
 .item-cols--text h4 {
 	color:#1e1e1e;
