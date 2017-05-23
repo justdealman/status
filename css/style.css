@@ -286,7 +286,7 @@ button::-moz-focus-inner {
 .header__logo {
 	position:absolute;
 	left:20px;
-	top:15px;
+	top:5px;
 	text-align:center;
 }
 .header__logo a {
@@ -318,7 +318,7 @@ button::-moz-focus-inner {
 }
 .header__info {
 	position:absolute;
-	left:248px;
+	left:400px;
 	top:44px;
 }
 .header__info p {
