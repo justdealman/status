@@ -1756,6 +1756,11 @@ button::-moz-focus-inner {
 	line-height:25px;
 	margin:0 0 16px;
 }
+.article__info p img {
+	max-width:100%;
+	height:auto;
+	vertical-align:top;
+}
 .article__info h6 {
 	color:#2d2d2d;
 	font-size:16px;
