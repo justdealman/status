@@ -2918,9 +2918,39 @@ button::-moz-focus-inner {
 	height:14px;
 	background:url('../img/home-icon.png') no-repeat 0 0;
 }
+.go-up {
+	position:fixed;
+	right:50%;
+	top:50%;
+	z-index:50;
+	display:block;
+	width:69px;
+	height:69px;
+	cursor:pointer;
+	margin:-34px -701px 0 0;
+	background:#a0a0a0 url('../img/go-up-arrow.png') no-repeat center 26px;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	visibility:hidden;
+	opacity:0;
+	-webkit-transition:all 0.2s ease-in-out;
+	transition:all 0.2s ease-in-out;
+}
+.go-up.is-visible {
+	visibility:visible;
+	opacity:0.8;
+}
+.go-up.is-visible:hover {
+	background-color:#7f7f7f;
+}
 @media all and (min-width:960px) {
 	.nav__main.fixed {
 		position:fixed;
+	}
+}
+@media all and (max-width:1460px) {
+	.go-up {
+		display:none;
 	}
 }
 @media all and (max-width:960px) {

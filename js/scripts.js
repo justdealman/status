@@ -152,6 +152,19 @@ $(function() {
 	$('.nav__search--submit').on('click', function(e) {
 		e.preventDefault();
 	});
+	$(window).on('scroll', function() {
+		if ( $(document).scrollTop() > $(window).height() ) {
+			$('.go-up').addClass('is-visible');
+		} else {
+			$('.go-up').removeClass('is-visible');
+		}
+	});
+	$('.go-up').on('click', function(e) {
+		e.preventDefault();
+		$('html, body').stop().animate({
+			scrollTop: 0
+		}, 1000);
+	});
 });
 (function headerSearch() {
 	var isFocused = false;
