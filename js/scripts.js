@@ -165,6 +165,21 @@ $(function() {
 			scrollTop: 0
 		}, 1000);
 	});
+	$('.mediakit__item--slider .core').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: false,
+		arrows: false,
+		infinite: true,
+		adaptiveHeight: true,
+		fade: true,
+		speed: 300
+	});
+	$('.mediakit__item--slider .nav li').on('click', function(e) {
+		e.preventDefault();
+		$(this).parents('.mediakit__item--slider').find('.core').slick('slickGoTo',$(this).attr('data')-1);
+		$(this).addClass('active').siblings().removeClass('active');
+	});
 });/*
 (function headerSearch() {
 	var isFocused = false;

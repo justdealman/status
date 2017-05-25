@@ -4623,7 +4623,7 @@ button::-moz-focus-inner {
 	.mediakit__item--row {
 		max-width:1280px;
 		text-align:center;
-		padding:48px 20px 87px;
+		padding:48px 20px 57px;
 		margin:0 auto;
 		-webkit-box-sizing:border-box;
 		box-sizing:border-box;
@@ -4652,6 +4652,85 @@ button::-moz-focus-inner {
 		width:100%;
 		height:auto;
 		margin:0 0 25px;
+	}
+	.mediakit__item--slider {
+		font-size:0;
+		text-align:left;
+		padding:0 0 0 10px;
+		margin:-33px 0 25px;
+		-webkit-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+	.mediakit__item--slider h5 {
+		position:relative;
+		font-size:13px;
+		line-height:16px;
+		font-weight:600;
+		padding:0 0 0 25px;
+		margin:0 0 22px 8px;
+	}
+	.mediakit__item--slider h5:before {
+		content:'';
+		position:absolute;
+		left:0;
+		top:1px;
+		width:16px;
+		height:16px;
+		background:#e31e24;
+	}
+	.mediakit__item--slider .nav {
+		position:relative;
+		display:inline-block;
+		width:210px;
+		vertical-align:top;
+	}
+	.mediakit__item--slider .nav img {
+		width:auto;
+		vertical-align:top;
+		margin:0 0 0 7px;
+	}
+	.mediakit__item--slider .nav ul {
+		position:absolute;
+		left:0;
+		top:0;
+		width:100%;
+		z-index:5;
+		margin:0;
+	}
+	.mediakit__item--slider .nav li {
+		position:relative;
+		height:171px;
+		color:#ffffff;
+		font-size:90px;
+		line-height:90px;
+		font-weight:bold;
+		text-align:center;
+		cursor:pointer;
+		padding:33px 24px 41px 0;
+		margin:0 0 -10px;
+		background:url('../img/mediakit-slider-nav.png') no-repeat 0 0;
+		background-size:100% 100%;
+		-webkit-box-sizing:border-box;
+		box-sizing:border-box;
+		opacity:0;
+		-webkit-transition:all 0.1s ease-in-out;
+		transition:all 0.1s ease-in-out;
+	}
+	.mediakit__item--slider .nav li.active {
+		z-index:1;
+		opacity:1;
+	}
+	.mediakit__item--slider .core {
+		display:inline-block;
+		width:1006px;
+		width:calc(100% - 224px);
+		vertical-align:top;
+		margin:0 -10px 0 14px;
+	}
+	.mediakit__item--slider .core img {
+		width:100%;
+		height:auto;
+		vertical-align:top;
 	}
 	.mediakit__lk {
 		background:#eaeaea;
